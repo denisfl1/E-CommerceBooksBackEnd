@@ -364,15 +364,7 @@ const CONTROLLER = {
             GetFavorites.push(addFavorite)
 
             searchUser.update({favorites:GetFavorites.join(',')})
-
-
-            // await LoginUser.update({
-            //  favorites:addFavorite,
-            // },{
-            //  where:{
-            //      id:16
-            //  }
-            // })
+            
 
             res.status(200).send("Update Successfull")
           
